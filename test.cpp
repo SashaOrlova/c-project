@@ -60,7 +60,6 @@ class HashSet_HP : public testing::Test {
   void SetUp() {
     typedef cc::FeldmanHashMap<gc_type, int, int> map_type;
 
-    // +1 - for guarded_ptr
     cds::gc::hp::GarbageCollector::Construct(map_type::c_nHazardPtrCount + 20,
                                              1, 16);
     cds::threading::Manager::attachThread();
