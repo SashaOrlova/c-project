@@ -11,8 +11,6 @@
 
 #include "./HashSet.h"
 
-#include <thread>
-#include <iostream>
 
 namespace cc = cds::container;
 
